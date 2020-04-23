@@ -104,6 +104,7 @@
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
         android:text="@string/next"
+        android:onClick="leagueNextClicked"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
