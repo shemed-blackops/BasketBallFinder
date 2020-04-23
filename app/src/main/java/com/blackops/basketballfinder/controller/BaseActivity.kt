@@ -1,4 +1,4 @@
-package com.blackops.basketballfinder
+package com.blackops.basketballfinder.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.util.Log
 
 open class BaseActivity : AppCompatActivity() {
 
-    val TAG = "LyfeCycle"
+    val TAG = "LifeCycle"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "${javaClass.simpleName} OnCreate")
