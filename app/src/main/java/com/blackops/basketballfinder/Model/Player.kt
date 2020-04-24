@@ -3,10 +3,11 @@ package com.blackops.basketballfinder.Model
 import android.os.Parcel
 import android.os.Parcelable
 
-class Player(var league: String?, var skill: String?): Parcelable {
+
+class Player(var league: String, var skill: String) : Parcelable {
     constructor(parcel: Parcel) : this(
-        parcel.readString(),
-        parcel.readString()
+        parcel.readString() ?: "",
+        parcel.readString() ?: ""
     ) {
     }
 
@@ -28,4 +29,5 @@ class Player(var league: String?, var skill: String?): Parcelable {
             return arrayOfNulls(size)
         }
     }
+
 }
